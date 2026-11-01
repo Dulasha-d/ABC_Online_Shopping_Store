@@ -2,9 +2,11 @@ ABC Shopping Store
 
 Responsive e-commerce front-end for a cosmetics, skincare, and wellness store, built with HTML and CSS.
 
+
 Overview
 
 ABC Shopping Store is designed to provide an engaging and user-friendly online shopping experience for cosmetics, skincare, and wellness products. It helps customers easily browse a curated catalog of high-quality products and explore exclusive brand offerings.
+
 
 Features
 
@@ -18,18 +20,24 @@ Clean, modern, mobile-friendly layout
 
 Icon library integration (Boxicons)
 
+
 Tech Stack
 
 HTML
 
 CSS
 
+
 Planned Improvements
 
 Interactive shopping cart, search, and wishlist features
+
 Special promotions and promotional sections
+
 JavaScript for interactivity (cart, search, form validation)
+
 Backend (e.g. Node.js, PHP, or Python) with a database for orders and users
+
 
 Screenshots
 
@@ -45,5 +53,7 @@ Screenshots
 How to Run
 
 Clone or download this repository.
+
 Open Onlineshoppingstore.html in any web browser.
+
 No build step or server required — it's a static site.
