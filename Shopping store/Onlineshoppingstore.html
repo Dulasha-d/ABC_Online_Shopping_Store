@@ -1,0 +1,806 @@
+<html>
+<head>
+<title>Online Shopping Store </title>
+<style>
+ {
+margin: 0;
+padding: 0;
+box sizing:border-box;
+font-family:sans-sarif;
+}
+section{
+width: 110%;
+height: 90%;
+background: url(./image/bg3.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+section nav{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+box-shadow: 0 0 20px #B33233;
+background: #fff;
+position: fixed;
+left: 0;
+z-index: 100;
+}
+section nav .logo img{
+width: 100px;
+cursor: pointer;
+margin: 8px 0;
+}
+section nav li{
+display: inline-block;
+padding: 0 10px;
+}
+section nav li a{
+color: black;
+text-decoration: none;
+list-style: none;
+}
+section nav li a:hover{
+color:#B33233 ;
+}
+.social-icons i{
+margin: 0 5px;
+font-size: 18px;
+cursor: pointer;
+}
+.social-icons i:hover{
+color: #B33233;
+transform: scale(1.1);
+}
+/*--main-*/
+section .main{
+display: flex;
+align-items: center;
+jutify-content: space-between;
+position: relative;
+top: 20%;
+}
+
+section .main h1{
+position: relative;
+font-size: 55px;
+color : white;
+top: 5px;
+left: 25px;
+}
+
+section .main h1 span{
+color: #B33233;
+}
+
+section .main p{
+width: 650px;
+text-align: justify;
+line-height: 22px;
+position: relative;
+color: white;
+top: 10px;
+left: 30px;
+}
+section .main .main-tag .main-btn{
+background: #B33233;
+padding: 10px 20px;
+position: relative;
+top: 14px;
+left: 25px;
+color: #ffFFFF;
+text-decoration: none;
+
+}
+
+section .main img{
+width: 500px;
+height:300px;
+position: relative;
+top: 40px;
+left: 120px;
+}
+
+
+/*services*/
+
+.services{
+width: 100%;
+height: auto;
+margin: 35px 0;
+top: 10px;
+}
+
+.services .services_box{
+width: 95%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.services .services_box .services_card{
+text-align: center;
+width: 200px;
+height: auto;
+box-shadow: 0 0 6px #B33233;
+padding: 15px 10px;
+}
+
+.services .services_box .services_card i{
+color: #B33233;
+font-size: 45px;
+margin-bottom: 15px;
+cursor: pointer;
+}
+
+.services .services_box .services_card h3 {
+margin-bottom: 10px;
+color: #FFF;
+}
+
+
+.services .services_box .services_card p {
+color: #fff;
+}
+
+/*Items*/
+.featured_items{
+width: 100%;
+height: 100vh;
+padding: 70px 0;
+}
+
+.featured_items h1{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+font-size: 45px;
+color:#FFF;
+}
+
+
+.featured_items P{
+color: #FFF;
+}
+
+.featured_items .featured_items_box{
+width: 95%;
+height: 70vh;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+overflow: hidden;
+overflow-x: scroll;
+}
+
+.featured_items .featured_items_box .featured_items_card{
+width:250px;
+height: 350px;
+text-align: center;
+padding: 5px;
+border: 1px solid #B33233;
+margin: auto 20px;
+}
+
+.featured_items .featured_items_box .featured_items_card:hover{
+box-shadow: 0 0 25px #B33233;
+}
+
+.featured_items .featured_items_box .featured_items_card .featured_items_img{
+cursor: pointer;
+}
+
+.featured_items .featured_items_box .featured_items_card .featured_items_img img{
+width: 150px;
+}
+
+.featured_items .featured_items_box .featured_items_card:hover .featured_items_img img{
+transform: scale(1:1);
+}
+
+.featured_items .featured_items_box .featured_items_card .featured_items_tag h2{
+margin: auto 12px;
+}
+
+.featured_items .featured_items_box .featured_items_card .featured_items_tag .product{
+color:#B33233;
+margin-top:8px;
+font-size: 19px;
+}
+
+.featured_items .featured_items_box .featured_items_card .featured_items_tag .price{
+margin-top:8px;
+font-weight: bold;
+margin-bottom:15px;
+}
+
+.featured_items .featured_items_box .featured_items_card .featured_items_tag .price sub{
+font-weight:100;
+padding: 0 5px;
+}
+
+.featured_items .featured_items_box .featured_items_card .featured_items_tag .f_btn{
+padding: 8px 20px;
+border: 2px solid #B33233;
+color: #fff;
+text-decoration: none;
+}
+
+::-webkit-scrollbar{
+width: 10px;
+height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+background: #B33233;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+box-shadow: insert 0 0 8px ;
+}
+
+/*arrivals*/
+
+.arrivals{
+width: 100%;
+height: 100vh;
+margin-bottom: 35px;
+padding: 70px 0;
+}
+
+.arrival h1{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 30px;
+font-size: 45px;
+color:#FFF;
+}
+
+
+.arrivals P{
+color: #FFF;
+}
+
+.arrivals .arrivals_box{
+width: 95%;
+height: 70vh;
+margin: 0 auto;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 25px 0; 
+
+}
+.arrivals .arrivals_box .arrivals_card{
+width: 250px;
+height: 350px;
+text-align: center;
+padding: 5px;
+border: 1px solid #B33233;
+margin: auto 20px;
+}
+
+
+.arrivals .arrivals_box .arrivals_card:hover{
+box-shadow: 0 0 25px #B33233;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_img{
+width: 150px;
+height: 220px;
+margin: 0 auto;
+cursor: pointer;
+box-shadow: 0 0 8px rgba(0,0,0,0.5);
+overflow: hidden;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_img img{
+width: 100%;
+height: 80%;
+object-fit: cover;
+object-position: center;
+transition: 0.3s;
+}
+
+.arrivals .arrivals_box .arrivals_card:hover .arrivals_img img{
+transform: scale(1.1);
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag h2{
+margin: 12px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .product{
+color: #B33233;
+margin-top: 8px;
+font-size: 19px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .price{
+margin-top: 8px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.arrivals .arrivals_box .arrivals_card .arrivals_tag .f_btn{
+padding: 8px 20px;
+border: 2px solid #B33233;
+color: #fff;
+text-decoration: none;
+}
+
+/*footer*/
+
+footer{
+width: 100%;
+margin: 0.5px;
+}
+
+
+footer .footer_main{
+width: 100%;
+display: flex;
+justify-content: space-around;
+}
+
+footer .footer_main .tag{
+margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+width: 200px;
+height: 200px;
+
+}
+
+footer .footer_main .tag p{
+width: 250px;
+line-height: 22px;
+text-align: justify;
+}
+
+.tag p:hover{
+color: #B33233;
+}
+
+footer .footer_main .tag h1{
+color: #fff;
+display: inline-block;
+font-size: 25px;
+margin: 25px 0;
+}
+
+footer .footer_main .tag i{
+margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+margin: 0 5px;
+color: #fff;
+}
+
+footer .footer_main .tag .social_link i:hover{
+color: #B33233;
+}
+
+footer .footer_main .tag a{
+display: block;
+color: white;
+text-decoration: none;
+margin: 10px 0;
+}
+
+footer .footer_main .tag a:hover{
+color: #B33233;
+}
+
+footer .footer_main .tag .search_bar{
+width: 230px;
+height: 30px;
+background: rgba(202,202,202);
+border-radius: 25px;
+}
+
+
+footer .footer_main .tag .search_bar input{
+width: 200px;
+padding: 2px o;
+position: relative;
+top: 17%;
+left: 6%;
+border: none;
+outline: none;
+font-size: 13px;
+background: none;
+}
+
+footer .footer_main .tag .search_bar button{
+padding: 7px 15px;
+background: #B33233;
+margin-top: 15px;
+border-radius: 25px;
+color: #fff;
+cursor: pointer;
+} 
+</style>
+<!-- Boxicons cdn -->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+<body style="background:#000">
+<section>
+<nav>
+<div class = "logo">
+<img src="./image/logo.png"alt=" ">
+</div>
+
+<ul>
+<li><a href="Onlineshoppingstore.html">Home</a></li>
+<li><a href="About.html">About</a></li>
+<li><a href="Arrivals.html">Arrivals</a></li>
+<li><a href="Contact.html">Contact</a></li>
+</ul>
+
+<div class="social-icons">
+<i class='bx bx-cart'></i>
+<i class='bx bx-search-alt'></i>
+<i class='bx bx-heart'></i>
+</div>
+</nav>
+
+<div class="main">
+<div class="main-tag">
+<h1>Welcome To<br><span> ABC Shopping Store</span></h1>
+<p>Welcome to our cosmetics store, your ultimate destination for beauty and self-care. Discover a curated selection of high-quality makeup, skincare, and wellness products designed to enhance your natural beauty. Explore our exclusive brands, enjoy special promotions, and indulge in a beauty experience like no other. Start your journey to radiance today!
+</p>
+<br>
+<a href="About.html" class="main-btn">Learn More</a>
+</div>
+<div class="main.img">
+<img src="./image/main1.jpg" alt=" ">
+</div>
+</section>
+
+<!--services-->
+<div class="services">
+<div class="services_box">
+
+<div class="services_card">
+<i class='bx bxs-truck'></i>
+<h3>Fast Delivery</h3>
+<p>Shop online and get your products in on time!</p>
+</div>
+
+<div class="services_card">
+<i class='bx bxs-calendar-check'></i>
+<h3>24 x 7 services</h3>
+<p>Enjoy 24/7 services for a seamless shopping experience!</p>
+</div>
+
+<div class="services_card">
+<i class='bx bxs-purchase-tag'></i>
+<h3>Best Deal</h3>
+<p>Grab the best deals,anytime with fast delivery!</p>
+</div>
+
+<div class="services_card">
+<i class='bx bxs-lock-alt'></i>
+<h3>Secure Payment</h3>
+<p>Shop with confidence using our secure payment options!</p>
+</div>
+</div>
+</div>
+
+<!--Cosmatics-->
+<div class="featured_items">
+<h1>Featured Items</h1>
+<div class="featured_items_box">
+
+<div class="featured_items_card">
+<div class="featured_items_img">
+<p>Featured Items</p>
+<img src= "image/cosm1.jpeg">
+</div>
+<div class="featured_items_tag">
+<p class="product">Makeup Palette</p>
+<p class="price">Rs.1,550<sub><del>Rs,2.000</del></sub></p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="featured_items_card">
+<div class="featured_items_img">
+<p>Featured Items</p>
+<img src= "image/cosm2.jpg">
+</div>
+<div class="featured_items_tag">
+<p class="product">Matte Lipstick</p>
+<p class="price">Rs1,250<sub><del>Rs.1,500</del></sub></p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="featured_items_card">
+<div class="featured_items_img">
+<p>Featured Items</p>
+<img src= "image/cosm3.jpg">
+</div>
+<div class="featured_items_tag">
+<p class="product">Bracelets</p>
+<p class="price">Rs.550<sub><del>Rs.600</del></sub></p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+
+
+<div class="featured_items_card">
+<div class="featured_items_img">
+<p>Featured Items</p>
+<img src= "image/cosm4.jpg">
+</div>
+<div class="featured_items_tag">2>
+<p class="product">Hair Clips</p>
+<p class="price">Rs.750<sub><del>Rs900</del></sub></p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="featured_items_card">
+<div class="featured_items_img">
+<p>Featured Items</p>
+<img src= "image/cosm5.jpg">
+</div>
+<div class="featured_items_tag">
+<p class="product">Brusher set</p>
+<p class="price">Rs.1.550<sub><del>Rs,2.000</del></sub></p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="featured_items_card">
+<div class="featured_items_img">
+<p>Featured Items</p>
+<img src= "image/cosm6.jpg">
+</div>
+<div class="featured_items_tag">>
+<p class="product">Makeup Pouche</p>
+<p class="price">Rs.2,350<sub><del>Rs,3.000</del></sub></p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="featured_items_card">
+<div class="featured_items_img">
+<p>Featured Items</p>
+<img src= "image/cosm7.png">
+</div>
+<div class="featured_items_tag">
+<p class="product">Liquid Matte Lipstick</p>
+<p class="price">Rs.1,550<sub><del>Rs,2.000</del></sub></p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+<div class="featured_items_card">
+<div class="featured_items_img">
+<p>Featured Items</p>
+<img src= "image/cosm8.jpg">
+</div>
+<div class="featured_items_tag">
+<p class="product">Scrunchee</p>
+<p class="price">Rs350<sub><del>Rs,400</del></sub></p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="featured_items_card">
+<div class="featured_items_img">
+<p>Featured Items</p>
+<img src= "image/cosm9.jpeg">
+</div>
+<div class="featured_items_tag">
+<p class="product">Bangle</p>
+<p class="price">Rs.900<sub><del>Rs,1.000</del></sub></p>
+<a href="#" class="f_btn">Learn More</a>
+</div>
+</div>
+
+</div>
+
+
+<!--Arrivals-->
+
+<div class="arrivals">
+<h1>New Arrivals</h1>
+<div class="arrivals_box">
+
+<div class="arrivals_card">
+<div class="arrivals_img">
+<p>New Arrivals</p>
+<img src= "image/arriv1.jpg">
+</div>
+<div class="arrivals_tag">
+<p class="product">Hair Band</p>
+<p class="price">Rs.500</p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="arrivals_card">
+<div class="arrivals_img">
+<p>New Arrivals</p>
+<img src= "image/arriv2.jpg">
+</div>
+<div class="arrivals_tag">
+<p class="product">Hair Clip 4pcs</p>
+<p class="price">Rs.1,500</p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="arrivals_card">
+<div class="arrivals_img">
+<p>New Arrivals</p>
+<img src= "image/arriv3.jpg">
+</div>
+<div class="arrivals_tag">
+<p class="product">Liquid Matte Lipstick</p>
+<p class="price">Rs.1,550</p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="arrivals_card">
+<div class="arrivals_img">
+<p>New Arrivals</p>
+<img src= "image/arriv4.jpg">
+</div>
+<div class="arrivals_tag">
+<p class="product">Silver Bangle</p>
+<p class="price">Rs.1,200</p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="arrivals_card">
+<div class="arrivals_img">
+<p>New Arrivals</p>
+<img src= "image/arriv6.jpg">
+</div>
+<div class="arrivals_tag">
+<p class="product">Double Heart Necklace</p>
+<p class="price">Rs.1,200</p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="arrivals_card">
+<div class="arrivals_img">
+<p>New Arrivals</p>
+<img src= "image/arriv5.jpg">
+</div>
+<div class="arrivals_tag">
+<p class="product">Earrings</p>
+<p class="price">Rs.1,000</p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="arrivals_card">
+<div class="arrivals_img">
+<p>New Arrivals</p>
+<img src= "image/arriv7.jpg">
+</div>
+<div class="arrivals_tag">
+<p class="product">Twinnies-Nail Polish</p>
+<p class="price">Rs.1,200</p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+<div class="arrivals_card">
+<div class="arrivals_img">
+<p>New Arrivals</p>
+<img src= "image/arriv8.jpg">
+</div>
+<div class="arrivals_tag">
+<p class="product">Gold Plated Ring</p>
+<p class="price">Rs.1,500</p>
+<a href="#" class="f_btn">Learn More</a>
+
+</div>
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<!--footer-->
+
+<footer>
+
+<div class="footer_main">
+
+<div class="tag">
+<img src="image/logo.png">
+<p>Ultimate Destination for Beauty</p>
+</div>
+
+<div class="tag">
+<h1>Quick Link</h1>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Arrivals</a>
+<a href="#">Features</a>
+</div>
+
+<div class="tag">
+<h1>Contact Info</h1>
+<a href="#"><i class='bx bx-phone'> </i> +97 71 00 00 000</a>
+<a href="#"><i class='bx bx-phone'> </i> +97 70 00 00 000</a>
+<a href="#"><i class='bx bxs-envelope'> </i> fashionstore@gmail.com</a>
+
+</div>
+
+<div class="tag">
+<h1>Follow us</h1>
+<div class="social_link">
+<i class='bx bxl-facebook-circle'>Facebook</i>
+<i class='bx bxl-instagram-alt'>Instagram</i>
+<i class='bx bxl-twitter'>Twitter</i>
+<i class='bx bxl-linkedin'>Linkedin</i>
+</div>
+
+<div class="tag">
+<h1>Newsletter</h1>
+<div class="search_bar">
+<input type="text" placeholder=" Your email id here">
+<button type="submit">Subscribe</button>
+</div>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>      
